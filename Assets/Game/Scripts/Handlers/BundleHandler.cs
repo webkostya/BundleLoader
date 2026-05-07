@@ -26,7 +26,7 @@ namespace Game.Scripts.Handlers
 
         private void InvokeProgress(float progress)
         {
-            OnProgressLoaded?.Invoke(Mathf.RoundToInt(progress));
+            OnProgressLoaded?.Invoke(progress);
         }
     }
 }
