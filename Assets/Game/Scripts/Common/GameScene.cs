@@ -1,4 +1,4 @@
-namespace Game.Scripts
+namespace Game.Scripts.Common
 {
     public enum GameScene
     {

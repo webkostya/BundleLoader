@@ -14,7 +14,7 @@ namespace Plugins.Bundles
             
             await sizeHandle.Task;
 
-            Debug.Log($"Bundles Size: {sizeHandle.Result} bytes");
+            Debug.Log($"Bundles size: {sizeHandle.Result} bytes.");
 
             var handle = Addressables.DownloadDependenciesAsync(
                 addresses,
@@ -43,7 +43,7 @@ namespace Plugins.Bundles
 
             if (handle.Status != AsyncOperationStatus.Succeeded)
             {
-                Debug.LogError($"Ошибка загрузки сцены {address}: {handle.OperationException}");
+                Debug.LogError($"Error loading scene {address}: {handle.OperationException}");
                 Addressables.Release(handle);
             }
         }

@@ -2,7 +2,7 @@ using Game.Scripts.Handlers;
 using UnityEngine.UI;
 using UnityEngine;
 
-namespace Game.Scripts
+namespace Game.Scripts.Common
 {
     public class Progress : MonoBehaviour
     {
